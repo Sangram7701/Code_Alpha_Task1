@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="p4.jpeg" />
+</head>
+
+<body>
+    <input type="radio" name="Photos" id="check1" checked />
+    <input type="radio" name="Photos" id="check2" />
+    <input type="radio" name="Photos" id="check3" />
+    <input type="radio" name="Photos" id="check4" />
+    <input type="radio" name="Photos" id="check5" />
+
+    <div class="container">
+        <h1>RESPONSIVE IMAGE GALLERY</h1>
+        <div class="top-content">
+            <h3>Image Gallery</h3>
+            <label for="check1">All Photos</label>
+            <label for="check2">Friends</label>
+            <label for="check3">Mine</label>
+            <label for="check4">Places</label>
+            <label for="check5">Cars</label>
+        </div>
+
+        <div class="full-img" id="fullImgBox">
+            <img src="p4.jpeg" id="fullImg" />
+            <span onclick="closeFullImg()">X</span>
+        </div>
+
+        <div class="photo-gallery">
+            <div class="pic place" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="p1.jpg"/>
+            </div>
+            <div class="pic friends" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="f1.jpg" />
+            </div>
+            <div class="pic mine" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="m1.jpg" />
+            </div>
+            <div class="pic place" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="p2.jpeg" />
+            </div>
+            <div class="pic friends" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="f2.JPG" />
+            </div>
+            <div class="pic mine" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="m2.JPG" />
+            </div>
+            <div class="pic place" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="p3.jpeg" />
+            </div>
+            <div class="pic friends" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="f3.JPG" />
+            </div>
+            <div class="pic friends" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="f4.jpg" />
+            </div>
+            <div class="pic friends" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="f5.jpg" />
+            </div>
+            <div class="pic friends" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="f6.jpg" />
+            </div>
+            <div class="pic mine" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="m3.jpg" />
+            </div>
+            <div class="pic place" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="p4.jpeg" />
+            </div>
+            <div class="pic friends" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="f7.jpg" />
+            </div>
+            <div class="pic mine" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="m4.jpg" />
+            </div>
+            <div class="pic cars" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="c1.jpg" />
+            </div>
+            <div class="pic cars" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="c2.jpeg" />
+            </div>
+            <div class="pic cars" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="c3.jpeg" />
+            </div>
+            <div class="pic cars" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="c4.jpeg" />
+            </div>
+            <div class="pic cars" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="c5.jpeg" />
+            </div>
+            <div class="pic cars" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="c6.jpeg" />
+            </div>
+            <div class="pic cars" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="c7.jpg" />
+            </div>
+
+            <div class="pic place" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="p5.jpeg" />
+            </div>
+            <div class="pic place" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="p6.jpg" />
+            </div>
+            <div class="pic place" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="p7.jpg" />
+            </div>
+            <div class="pic place" onclick="openFullImg(this.querySelector('img').src)">
+                <img src="p8.jpg" />
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic) {
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+
+        function closeFullImg() {
+            fullImgBox.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
+
+    
